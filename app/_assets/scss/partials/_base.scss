@@ -13,7 +13,7 @@ h1 {
     font-family: $head-font-family;
     font-weight: $head-font-weight;
     font-size: $large-font-size;
-    color: $brand-colour;
+    color: $contrast-colour;
 }
 
 h2, h3 {
@@ -23,15 +23,15 @@ h2, h3 {
 
 .button {
   padding: 12px 20px;
-  background-color: $brand-colour;
-  border: 1px solid $contrast-colour;
-  color: $contrast-colour;
+  background-color: $contrast-colour;
+  border: 1px solid $brand-colour;
+  color: $brand-colour;
   text-decoration:none;
   margin-left: $spacing-unit/2;
   font-size: $medium-font-size;
 
   &:hover,
   &:focus {
-    background-color: darken($brand-colour, 25%);
+    background-color: darken($contrast-colour, 25%);
   }
 }

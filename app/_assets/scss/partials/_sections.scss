@@ -1,30 +1,59 @@
 .hero {
-    padding-top: 10vh;
+    padding-top: 8vh;
     padding-right: $spacing-unit/2;
     line-height: 1.4 * $base-line-height;
     text-align: right;
 
-    .title, .subtitle, .button {
+    .title, .subtitle, .button, .countdown {
         animation-duration: 2s;
         animation-delay: 1s;
     }
 
     h1 {
         color: $brand-colour;
+        text-shadow: 1px 1px 2px black;
     }
 
     h2 {
         color: lighten($brand-colour, 30%);
         padding-bottom: $spacing-unit;
+        text-shadow: 1px 1px 2px black;
+    }
+}
+
+#clockdiv{
+    padding-top: $spacing-unit * 3;
+    color: #fff;
+    margin: auto;
+    width: 80%;
+    font-weight: 100;
+    text-align: center;
+
+    >div {
+        padding: 10px;
+        border-radius: 3px;
+        background: darken($contrast-colour, 15%);
+        display: inline-block;
+
+        >span {
+            padding: 15px;
+            border-radius: 3px;
+            background: $contrast-colour;
+            display: inline-block;
+        }
     }
 
+    .smalltext{
+        padding-top: 5px;
+        font-size: 16px;
+    }
 }
 
 .navbar {
     padding-top: $spacing-unit/2;
     height: $spacing-unit * 3;
-    background-color: $grey-colour-dark;
     font-size: $medium-font-size;
+    text-shadow: 1px 1px 2px black;
 
     a {
 
@@ -40,8 +69,7 @@
 }
 
 #splash {
-    background-color: black;
-    //background: url(../img/flames.jpg);
+    background: url(../img/dublin.jpg);
     background-size: cover;
 }
 
@@ -73,8 +101,16 @@
 @include media-query($medium-break) {
 
 
-    h1 {
-        font-size: 1.5 * $large-font-size;
+    .hero {
+
+        h1 {
+            font-size: 1.5 * $large-font-size;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        h2 {
+            text-shadow: 2px 2px 4px black;
+        }
     }
 
     nav {
@@ -94,6 +130,18 @@
         padding-top: 30vh;
         padding-right: $spacing-unit;
         line-height: $base-line-height;
+    }
+
+    .button {
+        box-shadow: 2px 2px 4px black;
+    }
+
+    .wrapper {
+
+        h1 {
+            font-size: 1.5 * $large-font-size;
+            padding-top: $spacing-unit;
+        }
     }
 
     #conference {

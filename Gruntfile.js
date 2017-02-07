@@ -22,7 +22,7 @@ module.exports = function(grunt) {
                 tasks: ['sass:server', 'autoprefixer', 'todo']
             },
             scripts: {
-                files: ['<%= app.source %>/_assets/js/**/*.{js}'],
+                files: ['<%= app.source %>/_assets/js/**/*.{js}', '<%= app.source %>/_assets/js/*.{js}'],
                 tasks: ['uglify', 'todo']
             },
             jekyll: {
