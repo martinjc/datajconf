@@ -4,6 +4,11 @@
     line-height: 1.4 * $base-line-height;
     text-align: right;
 
+    .title, .subtitle, .button {
+        animation-duration: 2s;
+        animation-delay: 1s;
+    }
+
     h1 {
         color: $brand-colour;
     }
@@ -85,6 +90,7 @@
     }
 
     .hero {
+
         padding-top: 30vh;
         padding-right: $spacing-unit;
         line-height: $base-line-height;
