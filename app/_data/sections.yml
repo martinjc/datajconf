@@ -1,0 +1,15 @@
+
+- title: Conference
+  id: conference
+
+- title: Speakers
+  id: speakers
+
+- title: Venue
+  id: venue
+
+- title: Submissions
+  id: submissions
+
+- title: Sponsors
+  id: sponsors

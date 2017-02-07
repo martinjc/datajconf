@@ -1,0 +1,30 @@
+title: European Data and Computational Journalism Conference
+short_title: DataJConf.eu
+email: chorleymj@cf.ac.uk
+description: > #
+        First European conference on data and computational journalism, to be
+        held June XXth and XXth, in Dublin, Ireland.
+
+# Grunt handles images and assets.
+exclude: ['img', 'css', 'js', 'fonts',
+          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+
+# _config.build.yml sets future and show_drafts to false on `grunt build`
+future: true
+show_drafts: true
+
+# Markdown library
+markdown: kramdown
+
+# Site settings
+baseurl: "/datajconf"
+
+# Varibles
+sitename: "DataJConf.eu"
+
+url: "https://martinjc.github.io" # the base hostname & protocol for your site
+twitter_username: martinjc
+github_username:  martinjc
+
+github_repository_url: "martinjc/datajconf.git"
+github_repository_name: datajconf

@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 300;
+
+$head-font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$head-font-weight: 100;
+
+$small-font-size:  $base-font-size * 0.875;
+$medium-font-size: $base-font-size * 1.5;
+$large-font-size:  $base-font-size * 2;
+$base-line-height: 1.6rem;
+
+$spacing-unit:     2rem;
+
+$text-color:       #111;
+// $background-color: #fdfdfd;
+$background-color: #fff;
+$brand-colour:      #2a7ae2;
+$contrast-colour: lighten($brand-colour, 50%);
+
+$link-colour: lighten($brand-colour, 25%);
+
+$grey-colour:       #828282;
+$grey-colour-light: lighten($grey-colour, 40%);
+$grey-colour-dark:  darken($grey-colour, 25%);
+
+// Width of the content area
+$gap-size:         10px;
+
+$max-content-size: 900px;
+
+$small-break:          600px;
+$medium-break:        1250px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "partials/reset",
+        "partials/base",
+        "partials/layout",
+        "partials/sections"
+//         "partials/syntax-highlighting"
+;

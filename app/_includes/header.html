@@ -1,0 +1,12 @@
+
+  <header>
+      <!-- Navigation -->
+      <nav class="navbar">
+        <ul class="nav">
+          {% for section in site.data.sections %}
+          <li class="nav-item"><a class="nav-link" href="#{{ section.id }}">{{ section.title | escape }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      </nav>
+  </header>
