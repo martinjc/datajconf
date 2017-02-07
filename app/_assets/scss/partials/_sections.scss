@@ -1,5 +1,5 @@
 .hero {
-    padding-top: 8vh;
+    padding-top: 6vh;
     padding-right: $spacing-unit/2;
     line-height: 1.4 * $base-line-height;
     text-align: right;
@@ -23,19 +23,22 @@
 
 #clockdiv{
     padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
     color: #fff;
     margin: auto;
     width: 100%;
     font-weight: 100;
     text-align: center;
 
-    >div {
+    .countdown {
         padding: 10px;
+        margin-left: 1px;
+        margin-right: 1px;
         background: darken($contrast-colour, 15%);
         border: 1px solid $brand-colour;
         display: inline-block;
 
-        >span {
+        span {
             padding: 15px;
             background: $contrast-colour;
             display: inline-block;
