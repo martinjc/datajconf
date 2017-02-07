@@ -52,6 +52,10 @@
         margin-bottom: $spacing-unit;
         text-align: center;
     }
+
+    .explainer {
+        margin-top: 10vh;
+    }
 }
 
 @include media-query($small-break) {
@@ -99,6 +103,10 @@
             font-size: $medium-font-size;
             font-weight: $base-font-weight;
             text-align: center;
+        }
+
+        .explainer {
+            margin-top: 20vh;
         }
     }
 }
