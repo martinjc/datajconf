@@ -8,11 +8,7 @@
 
 ## TODO
 
-## app/index.html
-
--  [ ] **TODO** `(line 5)`  Actually fill this out -->
-
 
 * * *
 
-Last generated: Tue Feb 07 2017 16:22:17 by [grunt-todo](https://github.com/leny/grunt-todo).
+Last generated: Tue Feb 07 2017 18:56:18 by [grunt-todo](https://github.com/leny/grunt-todo).

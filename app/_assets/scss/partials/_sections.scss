@@ -11,33 +11,32 @@
 
     h1 {
         color: $brand-colour;
-        text-shadow: 1px 1px 2px black;
+        text-shadow: 2px 2px 4px black;
     }
 
     h2 {
         color: lighten($brand-colour, 30%);
         padding-bottom: $spacing-unit;
-        text-shadow: 1px 1px 2px black;
+        text-shadow: 2px 2px 4px black;
     }
 }
 
 #clockdiv{
-    padding-top: $spacing-unit * 3;
+    padding-top: $spacing-unit;
     color: #fff;
     margin: auto;
-    width: 80%;
+    width: 100%;
     font-weight: 100;
     text-align: center;
 
     >div {
         padding: 10px;
-        border-radius: 3px;
         background: darken($contrast-colour, 15%);
+        border: 1px solid $brand-colour;
         display: inline-block;
 
         >span {
             padding: 15px;
-            border-radius: 3px;
             background: $contrast-colour;
             display: inline-block;
         }
@@ -94,7 +93,11 @@
 @include media-query($small-break) {
 
     .hero {
-        padding-top: 20vh;
+        padding-top: 10vh;
+    }
+
+    #clockdiv{
+        padding-top: $spacing-unit * 2;
     }
 }
 
@@ -103,13 +106,11 @@
 
     .hero {
 
+        padding-top: 15vh;
+
         h1 {
             font-size: 1.5 * $large-font-size;
-            text-shadow: 2px 2px 4px black;
-        }
-
-        h2 {
-            text-shadow: 2px 2px 4px black;
+            line-height: 1.8 * $base-line-height;
         }
     }
 
@@ -142,6 +143,10 @@
             font-size: 1.5 * $large-font-size;
             padding-top: $spacing-unit;
         }
+    }
+
+    #clockdiv{
+        padding-top: $spacing-unit * 3;
     }
 
     #conference {
