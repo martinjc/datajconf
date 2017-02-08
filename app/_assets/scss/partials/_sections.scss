@@ -52,6 +52,12 @@
 }
 
 .navbar {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
     padding-top: $spacing-unit/2;
     height: $spacing-unit * 3;
     font-size: $medium-font-size;
