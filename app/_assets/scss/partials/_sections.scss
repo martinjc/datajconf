@@ -100,6 +100,38 @@
     }
 }
 
+#speakers {
+    background: url(../img/microphone.jpg);
+    background-size: cover;
+    padding-bottom: $spacing-unit;
+    color: white;
+
+    .flex-wrapper {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .speaker {
+        background-color: rgba($grey-colour-dark, 0.9);
+        padding-top: $spacing-unit/2;
+        border-radius: 50px;
+        margin: $gap-size;
+        text-align: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 1;
+
+        .fa-user {
+            font-size: 80px;
+        }
+    }
+
+    .explainer {
+        padding-bottom: $spacing-unit;
+    }
+}
+
 @include media-query($small-break) {
 
     .hero {
@@ -177,4 +209,12 @@
             margin-top: 20vh;
         }
     }
+
+    #speakers {
+        .flex-wrapper {
+            padding-top: 10vh;
+            flex-direction: row;
+        }
+    }
+
 }
