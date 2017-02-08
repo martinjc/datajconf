@@ -1,5 +1,5 @@
 .hero {
-    padding-top: 6vh;
+    padding-top: $spacing-unit * 2.5;
     padding-right: $spacing-unit/2;
     line-height: 1.4 * $base-line-height;
     text-align: right;
@@ -58,16 +58,16 @@
     left: 0;
     z-index: 9999;
     width: 100%;
-    padding-top: $spacing-unit/2;
-    height: $spacing-unit * 3;
-    font-size: $medium-font-size;
+    height: $spacing-unit * 2;
+    font-size: $small-font-size;
     text-shadow: 1px 1px 2px black;
     background-color: rgba(black, 0.5);
 
     a {
 
         color: $link-colour;
-        margin-right: $spacing-unit/2;
+        margin-right: $spacing-unit/4;
+        margin-left: $spacing-unit/4;
         text-decoration: none;
 
         &:hover,
@@ -103,32 +103,26 @@
 @include media-query($small-break) {
 
     .hero {
-        padding-top: 10vh;
+        padding-top: $spacing-unit * 3;
     }
 
     #clockdiv{
         padding-top: $spacing-unit * 2;
     }
+
+    .navbar {
+        font-size: $medium-font-size;
+    }
 }
 
 @include media-query($medium-break) {
-
-
-    .hero {
-
-        padding-top: 15vh;
-
-        h1 {
-            font-size: 1.5 * $large-font-size;
-            line-height: 1.8 * $base-line-height;
-        }
-    }
 
     nav {
         text-align: right;
     }
 
     .navbar {
+        padding-top: $spacing-unit/2;
         height: $spacing-unit * 2;
 
         a {
@@ -141,6 +135,11 @@
         padding-top: 30vh;
         padding-right: $spacing-unit;
         line-height: $base-line-height;
+
+        h1 {
+            font-size: 1.5 * $large-font-size;
+            line-height: 1.8 * $base-line-height;
+        }
     }
 
     .button {
