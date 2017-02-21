@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>European Data and Computational Journalism Conference</title>
-    <description>First European conference on data and computational journalism, to be held June XXth and XXth, in Dublin, Ireland.
+    <description>First European conference on data and computational journalism, to be held June 22nd and 23rd, in Dublin, Ireland.
 </description>
-    <link>https://martinjc.github.io/datajconf/</link>
-    <atom:link href="https://martinjc.github.io/datajconf/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 14 Feb 2017 11:05:47 +0000</pubDate>
-    <lastBuildDate>Tue, 14 Feb 2017 11:05:47 +0000</lastBuildDate>
+    <link>https://martinjc.github.io/</link>
+    <atom:link href="https://martinjc.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 21 Feb 2017 13:19:30 +0000</pubDate>
+    <lastBuildDate>Tue, 21 Feb 2017 13:19:30 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
   </channel>
