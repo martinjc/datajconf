@@ -14,6 +14,5 @@ function updateCountdown(ts) {
 }
 
 var timerID = countdown(function(ts){
-  console.log(ts);
   updateCountdown(ts);
 }, new Date(Date.parse('2017/06/22')), countdown.MONTHS | countdown.DAYS | countdown.HOURS | countdown.MINUTES);

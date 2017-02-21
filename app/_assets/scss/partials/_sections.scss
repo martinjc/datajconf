@@ -80,6 +80,7 @@
 #splash {
     background: url(../img/dublin.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #conference {
@@ -103,13 +104,19 @@
 #speakers {
     background: url(../img/microphone.jpg);
     background-size: cover;
-    padding-bottom: $spacing-unit;
+    background-attachment: fixed;
     color: white;
 
     .flex-wrapper {
         margin: 0 auto;
         display: flex;
         flex-direction: column;
+    }
+
+    .layer {
+        background-color: rgba($grey-colour-dark, 0.6);
+        min-height: 100vh;
+        padding-bottom: $spacing-unit;
     }
 
     .speaker {
@@ -120,10 +127,15 @@
         text-align: center;
         flex-grow: 1;
         flex-shrink: 1;
-        flex-basis: 1;
+        flex-basis: 0;
 
         .fa-user {
             font-size: 80px;
+        }
+
+        p {
+            padding-top: 100px;
+            padding-bottom: 100px;
         }
     }
 
@@ -132,23 +144,72 @@
     }
 }
 
+#organisers {
+
+    .flex-wrapper {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .organiser {
+
+        img {
+            width: 50%;
+            border-radius: 100px;
+        }
+
+        background-color: rgba($grey-colour-dark, 0.9);
+        padding-top: $spacing-unit/2;
+        border-radius: 20px;
+        margin: $gap-size;
+        text-align: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+
+        p {
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+    }
+
+    ul {
+        margin-left: 20px;
+    }
+}
+
 #submissions {
-    background: url(../img/papers.jpg);
-    background-size: cover;
+    //background: url(../img/papers.jpg);
+    //background-size: cover;
+    //background-attachment: fixed;
     color: white;
     h1 {
         color: lighten($brand-colour, 5%);
     }
 
     .layer {
-        background-color: rgba($grey-colour-dark, 0.6);
+        background-color: rgba($grey-colour-dark, 0.9);
         min-height: 100vh;
         padding-bottom: $spacing-unit;
-
     }
 
     ul {
         margin-left: 20px;
+    }
+
+    a {
+        color: lighten($brand-colour, 5%);
+
+        &:visited {
+            color: $brand-colour;
+        }
+
+        &:hover {
+            color: darken($brand-colour, 10%);
+        }
     }
 }
 
@@ -164,7 +225,7 @@
         max-width: 100%;
 
         &.uni {
-            max-width: 250px;
+            max-height: 250px;
         }
 
         &.hh {
@@ -237,7 +298,7 @@
             max-width: 30%;
 
             &.uni {
-                max-width: 400px;
+                max-height: 300px;
             }
 
             &.hh {
@@ -266,11 +327,12 @@
         }
     }
 
-    #speakers {
+    #speakers, #organisers {
         .flex-wrapper {
             padding-top: 10vh;
             flex-direction: row;
         }
     }
+
 
 }

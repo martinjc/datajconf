@@ -1,9 +1,15 @@
 title: European Data and Computational Journalism Conference
-short_title: DataJConf.eu
-email: chorleymj@cf.ac.uk
+short_title: DataJConf
+email: datajconf@gmail.com
 description: > #
         First European conference on data and computational journalism, to be
-        held June 22nd and 23rd, in Dublin, Ireland.
+        held June 22nd and 23rd, in Dublin, Ireland. The European Data and
+        Computational Journalism Conference aims to bring together industry,
+        practitioners and academics in the fields of journalism and news
+        production and information, data, social and computer sciences,
+        facilitating a multidisciplinary discussion on these topics in order to
+        advance research and practice in the broad area of Data and
+        Computational Journalism.
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
@@ -22,8 +28,8 @@ baseurl: ""
 # Varibles
 sitename: "DataJConf.com"
 
-url: "https://martinjc.github.io" # the base hostname & protocol for your site
-twitter_username: martinjc
+url: "http://datajconf.com" # the base hostname & protocol for your site
+twitter_username: datajconf
 github_username:  martinjc
 
 github_repository_url: "martinjc/datajconf.git"
