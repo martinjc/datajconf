@@ -14,7 +14,7 @@ module.exports = function(grunt) {
         app: {
             source: 'app',
             dist: 'dist',
-            baseurl: 'datajconf'
+            baseurl: ''
         },
         watch: {
             sass: {

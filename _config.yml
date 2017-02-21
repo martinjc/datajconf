@@ -3,7 +3,7 @@ short_title: DataJConf.eu
 email: chorleymj@cf.ac.uk
 description: > #
         First European conference on data and computational journalism, to be
-        held June XXth and XXth, in Dublin, Ireland.
+        held June 22nd and 23rd, in Dublin, Ireland.
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
@@ -17,10 +17,10 @@ show_drafts: true
 markdown: kramdown
 
 # Site settings
-baseurl: "/datajconf"
+baseurl: ""
 
 # Varibles
-sitename: "DataJConf.eu"
+sitename: "DataJConf.com"
 
 url: "https://martinjc.github.io" # the base hostname & protocol for your site
 twitter_username: martinjc
