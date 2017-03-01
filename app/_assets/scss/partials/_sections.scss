@@ -324,6 +324,22 @@
         }
     }
 
+    #venue {
+        .wrapper {
+            width: 55%;
+            margin: auto;
+        }
+    }
+
+    #submissions {
+        .wrapper {
+            width: 55%;
+            margin: auto;
+            padding-bottom: $spacing-unit;
+
+        }
+    }
+
     #conference {
 
         h1 {
@@ -331,7 +347,7 @@
         }
 
         p {
-            width: 60%;
+            width: 50%;
             margin: auto;
             margin-bottom: $spacing-unit * 2;
             font-size: $medium-font-size;
@@ -348,6 +364,10 @@
         .flex-wrapper {
             padding-top: 10vh;
             flex-direction: row;
+        }
+
+        .pc {
+            margin-left: $spacing-unit;
         }
     }
 
