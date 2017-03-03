@@ -15,4 +15,4 @@ function updateCountdown(ts) {
 
 var timerID = countdown(function(ts){
   updateCountdown(ts);
-}, new Date(Date.parse('2017/06/29')), countdown.MONTHS | countdown.DAYS | countdown.HOURS | countdown.MINUTES);
+}, new Date(Date.parse('2017/07/06 09:00')), countdown.MONTHS | countdown.DAYS | countdown.HOURS | countdown.MINUTES);

@@ -11,10 +11,12 @@ module.exports = function(grunt) {
     require('jit-grunt')(grunt, {buildcontrol: 'grunt-build-control'});
 
     grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
         app: {
             source: 'app',
             dist: 'dist',
-            baseurl: ''
+            baseurl: '',
+            remote: '<%= pkg.repository.remote %>'
         },
         watch: {
             sass: {
@@ -283,7 +285,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     dir: '<%= app.dist %>/<%= app.baseurl %>',
-                    remote: 'git@github.com:martinjc/datajconf.git',
+                    remote: '<%= app.remote %>',
                     branch: 'gh-pages',
                     commit: true,
                     push: true,
