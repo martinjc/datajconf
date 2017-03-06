@@ -2,14 +2,13 @@ title: European Data and Computational Journalism Conference
 short_title: DataJConf
 email: datajconf@gmail.com
 description: > #
-        First European conference on data and computational journalism, to be
-        held in Dublin, Ireland. The European Data and
-        Computational Journalism Conference aims to bring together industry,
-        practitioners and academics in the fields of journalism and news
-        production and information, data, social and computer sciences,
-        facilitating a multidisciplinary discussion on these topics in order to
-        advance research and practice in the broad area of Data and
-        Computational Journalism.
+        The First European Conference on Data and Computational Journalism aims
+        to bring together industry, practitioners and academics in the fields of
+        journalism and news production and information, data, social and
+        computer sciences, facilitating a multidisciplinary discussion on these
+        topics in order to advance research and practice in the broad area of
+        Data and Computational Journalism. The conference will be held in Dublin,
+        Ireland, on 6th and 7th July, 2017.
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',

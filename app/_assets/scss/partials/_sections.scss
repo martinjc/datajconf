@@ -196,6 +196,21 @@
     ul {
         margin-left: 20px;
     }
+
+    .pc {
+        padding-top: $spacing-unit;
+
+        h2 {
+            font-size: 2 * $small-font-size;
+        }
+
+        li {
+            font-size: 1.4 * $small-font-size;
+            line-height: 1.2 * $base-line-height;
+        }
+
+
+    }
 }
 
 #submissions {
@@ -228,6 +243,7 @@
             color: darken($brand-colour, 10%);
         }
     }
+
 }
 
 #sponsors {
@@ -246,7 +262,7 @@
         }
 
         &.hh {
-            max-width: 150px;
+            max-width: 120px;
         }
     }
 }
