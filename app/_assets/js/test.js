@@ -1,4 +1,6 @@
-new WOW().init();
+new WOW({
+    mobile: false
+}).init();
 
 function updateCountdown(ts) {
   var clock = document.getElementById('clockdiv');
