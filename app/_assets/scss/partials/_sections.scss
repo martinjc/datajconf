@@ -51,6 +51,24 @@
     }
 }
 
+#google {
+    position: absolute;
+    bottom: 1px;
+    margin-top: $spacing-unit * 2;
+    padding-left: $spacing-unit/2;
+    color: #fff;
+    width: 100%;
+    font-weight: 300;
+
+    .sponsor {
+        text-shadow: 2px 2px 4px black;
+        padding: 2px;
+        display: inline-block;
+    }
+
+
+}
+
 .navbar {
 
     position: fixed;
@@ -81,6 +99,7 @@
     background: url(../img/dublin.jpg);
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
 }
 
 #conference {
