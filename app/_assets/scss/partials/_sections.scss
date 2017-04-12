@@ -141,6 +141,8 @@
     .speaker {
         background-color: rgba($grey-colour-dark, 0.9);
         padding-top: $spacing-unit/2;
+        padding-left: 20px;
+        padding-right: 20px;
         border-radius: 50px;
         margin: $gap-size;
         text-align: center;
@@ -149,12 +151,38 @@
         flex-basis: 0;
 
         .fa-user {
-            font-size: 80px;
+            font-size: 140px;
+        }
+
+        img {
+            width: 50%;
+            border-radius: 100px;
+        }
+
+        h3 {
+            font-size: $small-font-size;
+            padding-bottom: $spacing-unit;
+
+            a {
+                color: lighten($contrast-colour, 20%);
+
+                &:hover {
+                    color: lighten($brand-colour, 10%);
+                }
+
+                &:visited{
+                    color: $brand-colour;
+                }
+            }
         }
 
         p {
-            padding-top: 100px;
-            padding-bottom: 100px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            a {
+                color: $link-colour;
+            }
         }
     }
 
@@ -237,7 +265,7 @@
     //background-size: cover;
     //background-attachment: fixed;
     color: white;
-    h1 {
+    h1, h2, h3, h4 {
         color: lighten($brand-colour, 5%);
     }
 
@@ -275,6 +303,11 @@
     img {
 
         max-width: 100%;
+
+        &.logo{
+            margin-right: 20px;
+            max-height: 100px;
+        }
 
         &.uni {
             max-height: 250px;
@@ -403,6 +436,10 @@
 
         .pc {
             margin-left: $spacing-unit;
+        }
+
+        h1 {
+            line-height: $base-line-height * 1.5;
         }
     }
 
