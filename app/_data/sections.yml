@@ -8,8 +8,8 @@
 - title: Venue
   id: venue
 
-- title: Submissions
-  id: submissions
+- title: Schedule
+  id: schedule
 
 - title: Organisers
   id: organisers

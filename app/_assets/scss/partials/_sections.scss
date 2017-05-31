@@ -159,6 +159,11 @@
             border-radius: 100px;
         }
 
+        h1, h2 {
+            text-shadow: 2px 2px 2px black;
+            color: lighten($contrast-colour, 20%);
+        }
+
         h3 {
             font-size: $small-font-size;
             padding-bottom: $spacing-unit;
@@ -188,6 +193,67 @@
 
     .explainer {
         padding-bottom: $spacing-unit;
+    }
+}
+
+#schedule {
+    .flex-wrapper {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .layer {
+        min-height: 100vh;
+        padding-bottom: $spacing-unit;
+    }
+
+    table {
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    thead th:nth-child(1) {
+        width: 25%;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    tbody td:nth-child(1) {
+        text-align: center;
+        border-right: 1px solid black;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: lighten($brand-colour, 10%);
+    }
+
+    tbody tr:nth-child(even) {
+      //background-color: lighten($grey-colour, 25%);
+    }
+
+    tbody .break {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    td span.title {
+        font-weight: 700;
+    }
+
+    td  a{
+        color: $contrast-colour;
+
+        &:hover {
+            color: darken($contrast-colour, 20%);
+        }
+
+        &:visited{
+            color: $contrast-colour;
+        }
     }
 }
 
@@ -307,6 +373,10 @@
         &.logo{
             margin-right: 20px;
             max-height: 100px;
+
+            &.rte {
+                max-height: 75px;
+            }
         }
 
         &.uni {
@@ -392,9 +462,9 @@
         }
     }
 
-    #venue {
+    #venue, #schedule {
         .wrapper {
-            width: 55%;
+            width: 70%;
             margin: auto;
         }
     }
