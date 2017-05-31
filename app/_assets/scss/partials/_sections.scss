@@ -225,14 +225,11 @@
     tbody td:nth-child(1) {
         text-align: center;
         border-right: 1px solid black;
+        vertical-align: middle;
     }
 
     tbody tr:nth-child(odd) {
       background-color: lighten($brand-colour, 10%);
-    }
-
-    tbody tr:nth-child(even) {
-      //background-color: lighten($grey-colour, 25%);
     }
 
     tbody .break {
