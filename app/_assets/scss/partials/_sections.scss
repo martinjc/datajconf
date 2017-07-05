@@ -214,8 +214,17 @@
         border-collapse: collapse;
     }
 
+    .track_title {
+        font-weight: 700;
+        color: darken($contrast-colour, 15%);
+    }
+
     thead th:nth-child(1) {
         width: 25%;
+    }
+
+    thead th:nth-child(2) {
+        text-align:left;
     }
 
     th, td {
@@ -372,7 +381,7 @@
             max-height: 100px;
 
             &.rte {
-                max-height: 75px;
+                max-height: 60px;
             }
         }
 
@@ -463,6 +472,10 @@
         .wrapper {
             width: 70%;
             margin: auto;
+        }
+
+        ul {
+            list-style: none;
         }
     }
 

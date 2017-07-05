@@ -5,11 +5,11 @@
 - title: Speakers
   id: speakers
 
-- title: Venue
-  id: venue
-
 - title: Schedule
   id: schedule
+
+- title: Venue
+  id: venue
 
 - title: Organisers
   id: organisers
