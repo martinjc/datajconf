@@ -1,6 +1,6 @@
 /*
-* Gruntfile adapted from https://github.com/ozasadnyy/optimized-jekyll-grunt
-*/
+ * Gruntfile adapted from https://github.com/ozasadnyy/optimized-jekyll-grunt
+ */
 
 'use strict';
 
@@ -8,7 +8,9 @@ module.exports = function(grunt) {
     // Show elapsed time after tasks run
     require('time-grunt')(grunt);
     // Load all Grunt tasks
-    require('jit-grunt')(grunt, {buildcontrol: 'grunt-build-control'});
+    require('jit-grunt')(grunt, {
+        buildcontrol: 'grunt-build-control'
+    });
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -285,7 +287,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     dir: '<%= app.dist %>/<%= app.baseurl %>',
-                    remote: '<%= app.remote %>',
+                    remote: 'git+https://github.com/martinjc/datajconf.git',
                     branch: 'gh-pages',
                     commit: true,
                     push: true,
@@ -294,16 +296,16 @@ module.exports = function(grunt) {
             }
         },
         todo: {
-          options: {
-            file: "todo.md",
-            githubBoxes: true,
-            colophon: true,
-            usePackage: true
-          },
-          src: [
-            'app/*',
-            'app/**/*'
-          ]
+            options: {
+                file: "todo.md",
+                githubBoxes: true,
+                colophon: true,
+                usePackage: true
+            },
+            src: [
+                'app/*',
+                'app/**/*'
+            ]
         }
     });
 
