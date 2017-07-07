@@ -287,7 +287,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     dir: '<%= app.dist %>/<%= app.baseurl %>',
-                    remote: 'git+https://github.com/martinjc/datajconf.git',
+                    remote: 'git@github.com:martinjc/datajconf.git',
                     branch: 'gh-pages',
                     commit: true,
                     push: true,
