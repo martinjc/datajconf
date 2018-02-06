@@ -368,11 +368,28 @@
         margin-left: 20px;
     }
 
+    h3 {
+        margin-bottom: $spacing-unit;
+    }
+
     p>a {
         color: lighten($contrast-colour, 5%);
 
         &:visited {
             color: lighten($contrast-colour, 5%);
+        }
+
+        &:hover {
+            color: darken($brand-colour, 10%);
+        }
+    }
+
+    a.button {
+        color: darken($brand-colour, 10%);
+        margin-top: $spacing-unit;
+
+        &:visited {
+            color: darken($brand-colour, 10%);
         }
 
         &:hover {
