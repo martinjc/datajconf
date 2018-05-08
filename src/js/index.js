@@ -6,7 +6,7 @@ function updateTimer() {
     var now = moment();
     var diff = moment.duration(now.diff(CONFERENCE_DATE));
     var month_span = document.querySelector('span.months');
-    month_span.innerHTML = 12 - diff.months();
+    month_span.innerHTML = 11 - diff.months();
     var days_span = document.querySelector('span.days');
     days_span.innerHTML = CONFERENCE_DATE.daysInMonth() - diff.days();
     var hours_span = document.querySelector('span.hours');
