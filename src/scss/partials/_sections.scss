@@ -220,22 +220,34 @@
         color: darken($contrast-colour, 15%);
     }
 
-    thead th:nth-child(1) {
+    .dayone thead th:nth-child(1) {
         width: 25%;
     }
 
-    thead th:nth-child(2) {
+    .dayone thead th:nth-child(2) {
         text-align:left;
+    }
+
+    .daytwo thead th:nth-child(1) {
+        width: 15%;
     }
 
     th, td {
         padding: 10px;
     }
 
-    tbody td:nth-child(1) {
+    .daytwo td {
+        vertical-align: middle;
+    }
+
+    .dayone tbody td:nth-child(1) {
         text-align: center;
         border-right: 1px solid black;
         vertical-align: middle;
+    }
+
+    .daytwo td {
+        text-align: center;
     }
 
     tbody tr:nth-child(odd) {
@@ -345,6 +357,18 @@
         background-color: rgba($grey-colour-dark, 0.8);
         min-height: 100vh;
         padding-bottom: $spacing-unit;
+    }
+
+    a {
+        color: lighten($contrast-colour, 20%);
+
+        &:hover {
+            color: lighten($brand-colour, 10%);
+        }
+
+        &:visited{
+            color: $brand-colour;
+        }
     }
 
 }
