@@ -21,6 +21,36 @@
     }
 }
 
+#past-splash {
+
+    background: url(../img/microphone_small.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+    color: $background-colour;
+    padding-top: $spacing-unit * 2.5;
+    padding-right: $spacing-unit/2;
+    line-height: 1.4 * $base-line-height;
+    text-align: right;
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        color: lighten($contrast-colour, 20%);
+
+        &:hover {
+            color: lighten($brand-colour, 10%);
+        }
+
+        &:visited{
+            color: $brand-colour;
+        }
+    }
+}
+
 #clockdiv{
     padding-top: $spacing-unit;
     padding-bottom: $spacing-unit;
@@ -346,7 +376,7 @@
 }
 
 #venue {
-    background: url(../img/cardiff_uni_small.jpg);
+    background: url(../img/cover_small.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
