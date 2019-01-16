@@ -376,7 +376,7 @@
 }
 
 #venue {
-    background: url(../img/cover_small.jpg);
+    background: url(../img/malaga_university_small.jpeg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -384,7 +384,7 @@
     color: white;
 
     .layer {
-        background-color: rgba($grey-colour-dark, 0.8);
+        background-color: rgba($grey-colour-dark, 0.2);
         min-height: 100vh;
         padding-bottom: $spacing-unit;
     }
