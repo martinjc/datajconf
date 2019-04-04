@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +11,10 @@
   <meta name="description" content="The 2nd European Conference on Data and Computational Journalism aims to bring together industry, practitioners and academics in the fields of journalism and news production and information, data, social and computer sciences, facilitating a multidisciplinary discussion on these topics in order to advance research and practice in the broad area of Data and Computational Journalism. The conference will be held in Cardiff, Wales during 2018.">
 
   <!-- fonts -->
-  <style type="text/css">
-    @font-face{font-family:Roboto;font-style:normal;font-weight:300;src:local('Roboto Light'),local('Roboto-Light'),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype')}@font-face{font-family:Roboto;font-style:normal;font-weight:700;src:local('Roboto Bold'),local('Roboto-Bold'),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype')}a,body,div,h1,h2,header,html,li,nav,p,section,span,ul{margin:0;padding:0;border:0;font-size:1em;font:inherit;vertical-align:baseline}a{text-decoration:none}header,nav,section{display:block}body{line-height:1}*{-webkit-box-sizing:border-box;box-sizing:border-box}body{font-weight:200;font-size:18px;line-height:1.8rem}body,h1{font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif}h1{font-weight:100;font-size:36px}h1,h2{color:#1b9991}.button,h2{font-size:22.5px}.button{padding:12px 20px;margin-bottom:2rem;background-color:#1b9991;border:1px solid #c4ffda;color:#c4ffda;text-decoration:none;margin-left:1rem}body,h1,p{margin-bottom:2rem}h2{margin-bottom:1rem}h1,h2{margin-left:-10px;padding:.5rem 0 .25rem .5rem}nav{text-align:center}nav ul{margin-left:0;margin-bottom:0}nav li{display:inline-block}.full-page-height{min-height:100vh}.hero{padding-top:5rem;padding-right:1rem;line-height:2.52rem;text-align:right}.hero .button,.hero .countdown,.hero .subtitle,.hero .title{-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-delay:1s;animation-delay:1s}.hero h1{color:#c4ffda;text-shadow:2px 2px 4px #000}.hero h2{text-shadow:2px 2px 4px #000}#clockdiv,.hero h2{color:#fff;padding-bottom:2rem}#clockdiv{padding-top:2rem;margin:auto;width:100%;font-weight:100;text-align:center}#clockdiv .countdown{padding:10px;margin-left:1px;margin-right:1px;background:#105853;border:1px solid #c4ffda;display:inline-block}#clockdiv .countdown span{padding:15px;background:#1b9991;display:inline-block}#clockdiv .smalltext{padding-top:5px;font-size:16px}.navbar{position:fixed;top:0;left:0;z-index:1;width:100%;height:4rem;font-size:15.75px;text-shadow:1px 1px 2px #000;background-color:rgba(0,0,0,.5)}.navbar a{margin-right:.5rem;margin-left:.5rem;text-decoration:none}.navbar a{color:#fff}#splash{background:url(img/cover_small.jpg);background-size:cover;background-attachment:fixed;background-position:50%;position:relative}@media screen and (min-width:400px){.hero{padding-top:6rem}#clockdiv{padding-top:4rem}.navbar{font-size:22.5px}}@media screen and (min-width:600px){nav{text-align:right}.navbar{padding-top:1rem;height:4rem}.navbar a{margin-right:2rem}.hero{padding-top:30vh;padding-right:2rem;line-height:1.8rem}.hero h1{font-size:54px;line-height:3.24rem}.button{-webkit-box-shadow:2px 2px 4px #000;box-shadow:2px 2px 4px #000}#clockdiv{padding-top:6rem}}
+  <style>
+    @font-face{font-family:Roboto;font-style:normal;font-weight:300;src:local('Roboto Light'),local('Roboto-Light'),url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype')}@font-face{font-family:Roboto;font-style:normal;font-weight:700;src:local('Roboto Bold'),local('Roboto-Bold'),url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype')}a,body,div,h1,h2,h3,header,html,li,nav,p,section,span,ul{margin:0;padding:0;border:0;font-size:1em;font:inherit;vertical-align:baseline}a{text-decoration:none}header,nav,section{display:block}body{line-height:1}*{-webkit-box-sizing:border-box;box-sizing:border-box}body{font-weight:200;font-size:18px;line-height:1.8rem}body,h1{font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif}h1{font-weight:100;font-size:36px}h1,h2,h3{color:#1b9991}.button,h2,h3{font-size:22.5px}.button{padding:12px 20px;margin-bottom:2rem;background-color:#1b9991;border:1px solid #c4ffda;color:#c4ffda;text-decoration:none;margin-left:1rem}body,h1,p{margin-bottom:2rem}h2{margin-bottom:1rem}h1,h2{margin-left:-10px;padding:.5rem 0 .25rem .5rem}nav{text-align:center}nav ul{margin-left:0;margin-bottom:0}nav li{display:inline-block}.full-page-height{min-height:100vh}.hero{padding-top:5rem;padding-right:1rem;line-height:2.52rem;text-align:right}.hero .button,.hero .countdown,.hero .subtitle,.hero .title{-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-delay:1s;animation-delay:1s}.hero h1{color:#c4ffda}.hero h1,.hero h2{text-shadow:2px 2px 4px #000}.hero h2{color:#fff;padding-bottom:2rem}#clockdiv{padding-top:2rem;padding-bottom:2rem;color:#fff;margin:auto;width:100%;font-weight:100;text-align:center}#clockdiv .countdown{padding:10px;margin-left:1px;margin-right:1px;background:#105853;border:1px solid #c4ffda;display:inline-block}#clockdiv .countdown span{padding:15px;background:#1b9991;display:inline-block}#clockdiv .smalltext{padding-top:5px;font-size:16px}#google{margin-top:4rem;padding-left:1rem;color:#fff;width:100%;font-weight:300}#google .sponsor{text-shadow:2px 2px 4px grey;padding:2px;display:inline-block}.navbar{position:fixed;top:0;left:0;z-index:1;width:100%;height:4rem;font-size:15.75px;text-shadow:1px 1px 2px #000;background-color:rgba(0,0,0,.5)}.navbar a{margin-right:.5rem;margin-left:.5rem;text-decoration:none}.navbar a{color:#fff}#splash{background:url(img/malaganightfinal.jpg);background-size:cover;background-attachment:fixed;background-position:50%;position:relative}@media screen and (min-width:400px){.hero{padding-top:6rem}#clockdiv{padding-top:4rem}.navbar{font-size:22.5px}}@media screen and (min-width:600px){nav{text-align:right}.navbar{padding-top:1rem;height:4rem}.navbar a{margin-right:2rem}.hero{padding-top:30vh;padding-right:2rem;line-height:1.8rem}.hero h1{font-size:54px;line-height:3.24rem}.button{-webkit-box-shadow:2px 2px 4px #000;box-shadow:2px 2px 4px #000}#clockdiv{padding-top:6rem}}
   </style>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="preload" as="style" onload="this.rel='stylesheet'">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet"></noscript>
 
   <!-- meta -->
@@ -25,7 +26,7 @@
   <meta property="og:url" content="http://datajconf.com/">
   <meta property="og:site_name" content="European Data and Computational Journalism Conference">
   <meta property="og:title" content="European Data and Computational Journalism Conference">
-  <meta property="og:description" content="The 2nd European Conference on Data and Computational Journalism aims to bring together industry, practitioners and academics in the fields of journalism and news production and information, data, social and computer sciences, facilitating a multidisciplinary discussion on these topics in order to advance research and practice in the broad area of Data and Computational Journalism. The conference will be held in Cardiff, Wales during 2018.">
+  <meta property="og:description" content="The 3rd European Conference on Data and Computational Journalism aims to bring together industry, practitioners and academics in the fields of journalism and news production and information, data, social and computer sciences, facilitating a multidisciplinary discussion on these topics in order to advance research and practice in the broad area of Data and Computational Journalism. The conference will be held in Malaga, Spain on the 1st and 2nd of July 2019.">
   <meta property="og:image" content="img/logo_small.png">
 
   <!-- icons -->
@@ -37,394 +38,452 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- css -->
-  <link rel="preload" href="css/app.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="css/app.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="css/app.css"></noscript>
-  <script>!function(e){"use strict";var t=function(t,n,r){function o(e){if(i.body)return e();setTimeout(function(){o(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=r||"all"}var l,i=e.document,d=i.createElement("link");if(n)l=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;l=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){l.parentNode.insertBefore(d,n?l:l.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=f,f(a),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(e){return!1}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r,r.getAttribute("media")),r.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){t.poly(),e.clearInterval(n)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(n)})}}}(this);</script>
+  <script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
   <script async src="//use.fontawesome.com/974e2a5af3.js"></script>
 </head>
+
 <body>
 
-    <main aria-label="content">
+  <main aria-label="content">
 
-      <section class="full-page-height" id="splash">
+    <section class="full-page-height" id="splash">
 
-        <header>
-            <!-- Navigation -->
-            <nav class="navbar">
-              <ul class="nav">
-                <li class="nav-item"><a class="nav-link" href="#conference">Conference</a></li>
-                <li class="nav-item"><a class="nav-link" href="#speakers">Speakers</a></li>
-                <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
-                <li class="nav-item"><a class="nav-link" href="#venue">Venue</a></li>
-                <li class="nav-item"><a class="nav-link" href="#organisers">Organisers</a></li>
-                <li class="nav-item"><a class="nav-link" href="#sponsors">Sponsors</a></li>
-                <li class="nav-item"><a class="nav-link" href="http://datajconf.com/2017/">Past</a></li>
-              </ul>
-            
-            </nav>
-        </header>
+      <header>
+        <!-- Navigation -->
+        <nav class="navbar">
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="#conference">Conference</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#speakers">Speakers</a></li> -->
+            <!-- <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="#submissions">Call for Papers</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#venue">Venue</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="#organisers">Organisers</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sponsors">Sponsors</a></li>
+            <li class="nav-item"><a class="nav-link" href="past.html">Past</a></li>
+          </ul>
+          
+        </nav>
+      </header>
 
-          <div class="hero">
-              <h1 class="title">European Data and Computational Journalism Conference</h1>
-              <h2 class="subtitle">June 20th - 21st 2018 - Cardiff, Wales</h2>
-              <!-- Cover Image: CC-BY 2.0 by Pete Birkinshaw https://www.flickr.com/photos/binaryape/5108212873/ -->
-              <div id="clockdiv">
-                <div class="countdown">
-                  <span class="months"></span>
-                  <div class="smalltext">Months</div>
-                </div>
-                <div class="countdown">
-                  <span class="days"></span>
-                  <div class="smalltext">Days</div>
-                </div>
-                <div class="countdown">
-                  <span class="hours"></span>
-                  <div class="smalltext">Hours</div>
-                </div>
-                <div class="countdown">
-                  <span class="minutes"></span>
-                  <div class="smalltext">Minutes</div>
-                </div>
-            </div>
-            <p><a class="button" href="https://www.eventbrite.com/e/european-data-and-computational-journalism-conference-2018-tickets-45678316073">Buy Tickets</a></p>
+      <div class="hero">
+        <h1 class="title">European Data and Computational Journalism Conference</h1>
+        <h2 class="subtitle">July 1st - 2nd 2019 - Malaga, Spain</h2>
+        <div id="clockdiv">
+          <div class="countdown">
+            <span class="months"></span>
+            <div class="smalltext">Months</div>
           </div>
-
-      </section>
-
-      <section class="full-page-height" id="conference">
-
-
-        <div class="wrapper">
-          <h1>The Conference</h1>
-          <div class="explainer">
-            <p>The 2nd European Data and Computational Journalism Conference aims to bring together industry, practitioners and academics in the fields of journalism and news production and information, data, social and computer sciences, facilitating a multidisciplinary discussion on these topics in order to advance research and practice in the broad area of Data and Computational Journalism.</p>
-            <p>Held in Cardiff, Wales, the conference will present a mix of academic talks and keynotes from industry leaders. It will be followed by a day of workshops and tutorials.</p>
-            <p>This is the 2nd edition of the European Data and Computational Journalism Conference. The <a href="http://datajconf.com/2017/">1st edition</a> was held in 2017 in Dublin, Ireland</p>
+          <div class="countdown">
+            <span class="days"></span>
+            <div class="smalltext">Days</div>
+          </div>
+          <div class="countdown">
+            <span class="hours"></span>
+            <div class="smalltext">Hours</div>
+          </div>
+          <div class="countdown">
+            <span class="minutes"></span>
+            <div class="smalltext">Minutes</div>
           </div>
         </div>
-        <div id="google">
-          <div class="sponsor">
-            <h3>Powered By</h3>
-            <a href="http://g.co/newstraining"><img src="img/googlenewsinitiative.png" alt=""></a>
-          </div>
-        </div>
-      </section>
-
-      <section class="half-page-height" id="speakers">
-        <div class="layer">
-          <div class="wrapper">
-            <h1>Speakers</h1>
-            <div class="explainer">
-              Joining us will be industrial and academic leaders delivering keynote talks during the conference on the real world practice of Data and Computational Journalism.
-            </div>
-            <div class="flex-wrapper">
-              <div class="speaker">
-                <img src="img/alberto.jpg" alt="">
-                <h1>Alberto Cairo</h1>
-                <h2>University of Miami</h2>
-                  <p>... talk details coming soon ...</p>
-              </div>
-              <div class="speaker">
-                  <img src="img/mar.jpg" alt="">
-                  <h1>Mar Cabra</h1>
-                  <h2>Previously at ICIJ</h2>
-                  <p>... talk details coming soon ...</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- <section class="full-page-height" id="submissions">
-        <div class="layer">
-          <div class="wrapper">
-            <h1>Submissions</h1>
-            <p>The 2nd European Data and Computational Journalism Conference aims to bring together industry, practitioners and academics in the fields of journalism and news production and information, data, social and computer sciences, facilitating a multidisciplinary discussion on these topics in order to advance research and practice in the broad area of Data and Computational Journalism.</p>
-            <p>Held in Cardiff, Wales, the conference will present a mix of academic talks and keynotes from industry leaders. It will be followed by a day of workshops and tutorials.</p>
-            <p>We invite the submission of both academic research-focused and industry-focused talks for the conference, on the subjects of journalism, data journalism, and information, data, social and computer sciences.</p>
-            <p>Academic talks should be submitted as 2-page extended abstracts, using <a href="http://datajconf.com/submissions/EDCJC_Extended_Abstract_Template.docx">this template</a>. Industry talks are also encouraged, which can be submitted to the <a href="https://easychair.org/conferences/?conf=datajconf2018">main submission site</a> as brief descriptions highlighting the topics and key themes of the talk and the relevance to the conference, <a href="http://datajconf.com/submissions/EDCJC_Industry_Talk_Form.docx">using this form</a>. Proposals for workshops and tutorials are also welcome, <a href="#workshops">see below</a>.</p>
-            <p>
-              Topics of interest include, but are not limited to:
-              <ul>
-                <li>Application of data and computational journalism within newsrooms</li>
-                <li>Data driven investigations</li>
-                <li>Data storytelling</li>
-                <li>Open data for journalism, storytelling, transparency and accountability</li>
-                <li>Algorithms, transparency and accountability</li>
-                <li>Automated, robot and chatbot journalism</li>
-                <li>Newsroom software and tools</li>
-                <li>‘Post-fact’ journalism and the impact of data </li>
-                <li>User experience and interactivity</li>
-                <li>Data and Computational Journalism education</li>
-                <li>Post-desktop news provision/interaction</li>
-                <li>Data mining news sources</li>
-                <li>Visualisation and presentation</li>
-                <li>Bias, ethics, transparency and truth in Data Journalism</li>
-                <li>Newsroom challenges with respect to data journalism, best practices, success and failure stories</li>
-              </ul>
-            </p>
-            <p>Extended Abstracts presented at the conference will be archived in proceedings compiled by the Library of University College Dublin. Selected full papers from the conference will be invited to submit to a journal special issue (tbc).</p>
-            <p>For any questions about submissions or the conference, please <a href="mailto:hello@datajconf.com">email us</a>, contact one of the <a href="#organisers">organisers</a> directly, or get in touch via <a href="http://www.twitter.com/intent/user?screen_name=datajconf">twitter</a>.</p>
-            <h3>Submissions should be received by 23:59 UTC on 3rd April 2018</h3>
-            <p><a class="button" href="https://easychair.org/conferences/?conf=datajconf2018">Submit Paper/Talk Proposal</a></p>
-            <h1 id="workshops">Workshop Proposals</h1>
-            <p>Submissions are also welcomed for ½ day workshops/tutorials to be given on the 2nd day of the conference. These could be practical/introductory sessions on topics/tools related to the themes of the conference. Workshop/Tutorial proposals should include information on the workshop/tutorial topic, the maximum number of attendees, and any space/equipment requirements, and can be submitted through the main submission site <a href="http://datajconf.com/submissions/EDCJC_Workshop_Proposal.docx">using this form</a>.</p>
-            <p>For any questions about submissions or the conference, please <a href="mailto:hello@datajconf.com">email us</a>, contact one of the <a href="#organisers">organisers</a> directly, or get in touch via <a href="http://www.twitter.com/intent/user?screen_name=datajconf">twitter</a>.</p>
-            <h3>Submissions should be received by 23:59 UTC on 3rd April 2018</h3>
-            <p><a class="button" href="https://easychair.org/conferences/?conf=datajconf2018">Submit Workshop Proposal</a></p>
-          </div>
-        </div>
-      </section> -->
-
-
-      <section class="half-page-height" id="schedule">
-        <div class="layer">
-          <div class="wrapper">
-            <h1>Conference Schedule</h1>
-            <p>Below is the conference schedule</p>
-            <p>
-              </p><h3>Day 1 - Wednesday 20th June 2018</h3>
-              <h4>Glamorgan Building, Cardiff University</h4>
-              <table>
-                <thead>
-                  <th>Time</th>
-                  <th>Talk</th>
-                </thead>
-                <tbody>
-                    <tr>
-                      <td>9:30</td>
-                      <td><span class="title">Arrival and Registration</span></td>
-                    </tr>
-                  <tr>
-                    <td>10:00</td>
-                    <td><span class="title">Opening</span></td>
-                  </tr>
-                  <tr>
-                    <td>10:15</td>
-                    <td><span class="title">Invited Talk</span><br>Alberto Cairo, University of Miami</td>
-                  </tr>
-                  <tr>
-                    <td>11:00</td>
-                    <td><span class="title">The stories behind a line: visualising personal narratives</span><br>Federica Fragapane</td>
-                  </tr>
-                  <tr class="break">
-                    <td>11:20</td>
-                    <td><span class="title">Break</span></td>
-                  </tr>
-                  <tr>
-                    <td>11:40</td>
-                    <td><span class="title">Data-driven journalism and transparency in Brazil: collaboration for open data</span><br>Marília Gehrke</td>
-                  </tr>
-                  <tr>
-                    <td>12:00</td>
-                    <td><span class="title">Fragmentation across media platforms: Mapping Audience behaviour on the web, Facebook and Twitter</span><br>Silvia Majo-Vazquez, Jason R. C. Nurse, Jun Zhao and Rasmus K Nielsen</td>
-                  </tr>
-                  <tr>
-                    <td>12:20</td>
-                    <td><span class="title">10 top tips for making government data more accessible</span><br>Zoe Hartland</td>
-                  </tr>
-                  <tr>
-                    <td>12:40</td>
-                    <td><span class="title">datastorytelling.gov.uk</span><br>Lisa Jones</td>
-                  </tr>
-                  <tr class="break">
-                    <td>13:00</td>
-                    <td><span class="title">Lunch</span></td>
-                  </tr>
-                  <tr>
-                    <td>13:40</td>
-                    <td><span class="title">How the BBC is enhancing local news output through its new Shared Data Unit</span><br>Peter Sherlock</td>
-                  </tr>
-                  <tr>
-                    <td>14:00</td>
-                    <td><span class="title">Data Journalism Education Globally</span><br>Bahareh R. Heravi</td>
-                  </tr>
-                  <tr>
-                    <td>14:20</td>
-                    <td><span class="title">You guessed it! Reflecting on preconceptions and exploring data without statistics</span><br>Pablo Leon Villagra, Sarwar Islam, Megan Lucero, Brooks Paige and Tomas Petricek</td>
-                  </tr>
-                  <tr>
-                    <td>14:40</td>
-                    <td><span class="title">Insight: the investigative tools and data-driven techniques we use at The Times and Sunday Times</span><br>Peter Yeung</td>
-                  </tr>
-                  <tr class="break">
-                    <td>15:00</td>
-                    <td><span class="title">Break</span></td>
-                  </tr>
-                  <tr>
-                    <td>15:20</td>
-                    <td><span class="title">Stories of storytelling about UK’s EU funding</span><br>Mariana Marasoiu, Sarwar Islam, Luke Church, Megan Lucero, Brooks Paige and Tomas Petricek</td>
-                  </tr>
-                  <tr>
-                    <td>15:40</td>
-                    <td><span class="title">Fighting corruption using open data with Global Witness and DataKind</span><br>Giselle Cory</td>
-                  </tr>
-                  <tr>
-                    <td>16:00</td>
-                    <td><span class="title">Invited Talk</span><br>Mar Cabra</td>
-                  </tr>
-                  <tr>
-                    <td>16:45 - 17:00</td>
-                    <td><span class="title">Closing</span></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h3>Conference Social</h3>
-              The conference will be followed by a social gathering (details tbc) - please come along and join us for drinks and discussion!
-            <p></p>
-              <h3>Day 2 - Thursday June 21st 2018</h3>
-              <h4>Venue tbc</h4>
-              <p>
-                Our second day will consist of a number of hands on talks and workshops. Timings for these will be confirmed as soon as possible, and registration for individual workshops will open shortly. This is the opening list - there are more to be announced!
-                <ul>
-                  <li class="track_title">Track 1: Workflow</li>
-                  <ul>
-                    <li>From interactive to social media: how to promote data journalism -  Martin Gonzalez Gomez and Marie Segger, The Economist</li>
-                    <li>Statistical Thinking for Journalists: from biases to objectivity - Ana Kolar, TaraStats Statistical Consultancy</li>
-                  </ul>
-                  <br>
-                  <li class="track_title">Track 2: Coding</li>
-                  <ul>
-                    <li>Introduction to Visualisation with JavaScript & D3 - Martin Chorley, Cardiff University</li>
-                    <li>From Excel to R - Steph Locke</li>
-                  </ul>
-                  <br>
-                  <li class="track_title">Track 3: Tools</li>
-                  <ul>
-                    <li>Google News Initiative: Tools for Data Journalism - Vincent Ryan, Teaching Fellow, Google News Lab</li>
-                    <li>Getting started with Data Journalism - Bahareh Heravi, University College Dublin and Glyn Mottershead, Cardiff University</li>
-                    <li>How to create charts that won't upset data vis experts? The Do's and the Don'ts - Lisa Charlotte Rost, Datawrapper</li>
-                  </ul>
-                </ul>
-              </p>
-          </div>
-        </div>
-      </section>
-
-
-
-      <section class="half-page-height" id="venue">
-        <div class="layer">
-          <div class="wrapper">
-            <h1 class="section-title">Venue</h1>
-            <p>The conference will be held at Cardiff University, Cardiff, Wales.</p>
-            <h2>Travel</h2>
-            <p>Travel information coming soon</p>
-            <h2>Hotels</h2>
-            <p>Hotel information coming soon</p>
-          </div>
-        </div>
-      </section>
-      <section class="full-page-height" id="organisers">
-        <div class="wrapper">
-            <h1 class="section-title">Organisers</h1>
-            <div class="flex-wrapper">
-              <div class="organiser">
-                  <img src="img/bahareh.jpeg" alt="">
-                  <h2>Bahareh Heravi</h2>
-                  <h3><a href="https://www.twitter.com/intent/user?screen_name=Bahareh360">@Bahareh360</a></h3>
-                  <p>Bahareh is an Assistant Professor in the School of Information and Communication Studies at University College Dublin, where she is the the Postgraduate Director and the Director of the newly found Data Journalism certification programme, commencing in September 2017. Prior to joining UCD, Bahareh was the Head of Insight News Lab at the Insight Centre for Data Analytics at the National University of Ireland, Galway. During this time she led a number of R&D projects with the Irish National TV and Radio broadcaster, RTÉ. Bahareh is the former Lead Data Scientist at The Irish Times and the founder of Hacks/Hackers Dublin. </p>
-              </div>
-              <div class="organiser">
-                  <img src="img/glyn.jpg" alt="">
-                  <h2>Glyn Mottershead</h2>
-                  <h3><a href="https://www.twitter.com/intent/user?screen_name=glynmottershead">@glynmottershead</a></h3>
-                  <p>A former newspaper reporter, feature writer, subeditor and production journalist, Glyn has worked across a range of news beats including crime, health and local government. Glyn is a co-author of The 21st Century Journalism Handbook and specialises in Digital Journalism and Data Journalism. He is a member of Investigative Reporters and Editors, and the Online News Association. Glyn is the co-director of the MSc Computational and Data Journalism at Cardiff University. He teaches at undergraduate and postgraduate levels, specialising in digital and data journalism. He is one of the founders of Hacks/Hackers South Wales X South West.</p>
-              </div>
-              <div class="organiser">
-                  <img src="img/martin.jpg" alt="">
-                  <h2>Martin Chorley</h2>
-                  <h3><a href="https://www.twitter.com/intent/user?screen_name=martinjc">@martinjc</a></h3>
-                  <p>Martin is a lecturer in the School of Computer Science &amp; Informatics at Cardiff University, where he is course director for the MSc Computational and Data Journalism, chair of Postgraduate operations, and Deputy Director of Learning and Teaching. His research is primarily focused in the areas of computational journalism and mobile and social computing, where he examines the ways in which humans and society interact with systems and technology. He teaches web development, data analysis and visualisation. He is one of the organisers of the PyDiff meetup in Cardiff, and is also one of the founders of Hacks/Hackers South Wales X South West.</p>
-              </div>
-            </div>
-            <div class="pc">
-              <h2>Program Committee</h2>
-              <p>
-                  <ul>
-                      <li>James Hamilton (Stanford University, U.S.)</li>
-                      <li>Nicholas Diakopoulos (Northwestern University, U.S.)</li>
-                      <li>Meredith Broussard (New York University, U.S.)</li>
-                      <li>Cheryl Phillips (Stanford University, U.S.)</li>
-                      <li>Eddy Borges Rey (University of Stirling, Scotland, U.K.)</li>
-                      <li>Paul Bradshaw (Birmingham City University, U.K.)</li>
-                      <li>Marc Esteve del Valle (University of Groningen, The Netherlands)</li>
-                      <li>Jonathan Gray (Kings College London, U.K.)</li>
-                      <li>Stefano Ceccon (Data Science lead and Data Journalist, UK)</li>
-                      <li>Florian Stalph (University of Passau, Germany)</li>
-                      <li>Silvia Majo-Vazquez (University of Oxford, UK)</li>
-                      <li>Liliana Bounegru (University of Groningen, The Netherlands)</li>
-                      <li>Carl-Gustav Linden (University of Helsinki, Finland)</li>
-                      <li>Wiebke Loosen (Hans-Bredow-Institut, Germany)</li>
-                      <li>Ester Applegren (Södertörn University, Sweden)</li>
-                      <li>Bahareh Heravi (University College Dublin, Ireland)</li>
-                      <li>Glyn Mottershead (Cardiff University, Wales, U.K.)</li>
-                      <li>Martin Chorley (Cardiff University, Wales, U.K.)</li>
-                  </ul>
-              </p>
-            </div>
-        </div>
-      </section>
-      <section class="half-page-height" id="sponsors">
-        <div class="wrapper">
-          <h1 class="section-title">Sponsors</h1>
-          <div class="sponsor-group">
-            <p>Sponsorship opportunities are available, please get in touch! Please <a href="mailto:hello@datajconf.com">email us</a>, contact one of the <a href="#organisers">organisers</a> directly, or get in touch via <a href="http://www.twitter.com/intent/user?screen_name=datajconf">twitter</a>.</p>
-          </div>
+        <p><a class="button" href="#submissions">Call for Submissions</a></p>
+        <p><a class="button" href="https://easychair.org/conferences/?conf=datajconf2019">Submit your Paper</a></p>
+      </div>
+      <div id="google">
+        <div class="sponsor">
           <h3>Powered By</h3>
-          <div class="sponsor-group">
-            <p>
-              <img src="img/googlenewsinitiative.png" alt="">
-            </p>
-          </div>
-          <h2>Supported by</h2>
-            <div class="sponsor-group">
-                <img class="uni" src="img/CUCOMSC.jpg" alt="">
-                <img class="uni" src="img/CUJOMEC.jpg" alt="">
-              <p></p>
-            </div>
-            <div class="sponsor-group">
-              <p>
-                <img class="uni" src="img/UCD_ICS.jpg" alt="">
-                <img class="uni" src="img/UCD_CSS.jpg" alt="">
-            </p></div>
-            <div class="sponsor-group">
-              <p>
-                <img class="hh" src="img/hhdub.png" alt="">
-                <img class="hh" src="img/hhswxsw.png" alt="">
-              </p>
-            </div>
-        </div>
-      </section>
-    </main>
-
-    <footer id="past">
-      <div class="layer">
-        <div class="wrapper">
-          <p>Previously:</p>
-          <ul>
-            <li><a href="http://datajconf.com/2017/">2017</a> (<a href="http://hdl.handle.net/10197/8634">Proceedings</a>)</li>
-          </ul>
-          <p>Image Credits:</p>
-          <ul>
-            <li><a href="https://www.flickr.com/photos/binaryape/5108212873/">Cardiff at Night</a> - <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> by <a href="https://www.flickr.com/photos/binaryape/">Pete Birkinshaw</a></li>
-            <li><a href="https://pixabay.com/en/microphone-audio-voice-auditorium-1206364/">Microphone</a> - <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> by <a href="https://pixabay.com/en/users/HugoAtaide-2073435/">HugoAtaide</a></li>
-            <li><a href="https://www.flickr.com/photos/cardiffinternational/4273607283/">Main Building, Cardiff University</a> - <a href="https://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC 2.0</a> by <a href="https://www.flickr.com/photos/cardiffinternational/">Cardiff University International Office</a></li>
-          </ul>
+          <a href="http://g.co/newstraining"><img src="img/gni.png" alt=""></a>
         </div>
       </div>
+    </section>
 
-    </footer>
+    <section class="full-page-height" id="conference">
 
 
-    <script src="js/app.js"></script>
+      <div class="wrapper">
+        <h1>The Conference</h1>
+        <div class="explainer">
+          <p>The 3rd European Data and Computational Journalism Conference aims to bring together industry, practitioners and academics in the fields of journalism and news production and information, data, social and computer sciences, facilitating a multidisciplinary discussion on these topics in order to advance research and practice in the broad area of Data and Computational Journalism.</p>
+          <p>Held in Malaga, Spain, the conference will present a mix of academic talks and keynotes from industry leaders. It will be followed by a day of workshops and tutorials.</p>
+          <p>This is the 3rd edition of the European Data and Computational Journalism Conference. The <a href="http://datajconf.com/2017/">1st edition</a> was held in 2017 in Dublin, Ireland, and the <a href="http://datajconf.com/2018/">2nd edition</a> was held in 2018, in Cardiff, Wales.</p>
+          <p>Registration for the conference is open to all</p>
+          <p>Early Bird tickets will be available very soon, priced at €60 for General Admission, €35 for Journalists, and €30 for Students. Once the early bird tickets are sold, regular price tickets will be available at slightly higher prices.</p>
+
+        </div>
+      </div>
+      <!-- <div id="google">
+        <div class="sponsor">
+          <h3>Powered By</h3>
+          <a href="http://g.co/newstraining"><img src="img/googlenewsinitiative.png" alt=""></a>
+        </div>
+      </div> -->
+    </section>
+
+    <section class="half-page-height" id="speakers">
+      <div class="layer">
+        <div class="wrapper">
+          <h1>Speakers</h1>
+          <div class="explainer">
+            Joining us will be industrial and academic leaders delivering keynote talks during the conference on the real world practice of Data and Computational Journalism.
+          </div>
+          <div class="flex-wrapper">
+            <div class="speaker">
+              <img src="img/daniele_grasso_large.jpg" alt="">
+              <h1>Daniele Grasso</h1>
+              <h2>Data Journalism Unit, El Pais</h2>
+              <h3><a href="https://www.twitter.com/intent/user?screen_name=danielegrasso"></a></h3>
+              <p>
+                Daniele is an Italian Data-Driven Journalist based in Madrid. He is the head of the Data Journalism Unit at El País since January 2019. Previously, he coordinated the Data Journalism Team of the Spanish leading digital newspaper, El Confidencial. Since June 2017 he has been a member of the International Consortium of Investigative Journalists. Daniele has a leading role in the Spanish chapters of cross-border investigations 'Lux Leaks', 'Swiss Leaks', a global effort to reveal the secret accounts of the HSBC, The Panama Papers and The Implant Files.</p>
+              <p>He took part in the the first pan-European data-journalism projects: GenerationE and The Migrants Files, the latter winning the Data Journalism Award, the European Press Prize 2015 and a Gold Medal at 'Premios ÑH'.</p>
+            </div>
+            <div class="speaker">
+              <img src="img/meredith-broussard.jpg" alt="">
+              <h1>Meredith Broussard</h1>
+              <h2>New York University</h2>
+              <h3><a href="https://www.twitter.com/intent/user?screen_name=merbroussard"></a></h3>
+              <p>
+                Meredith Broussard is an assistant professor at the Arthur L. Carter Journalism Institute of New York University, a 2018 Reynolds Journalism Institute Fellow, and the author of Artificial Unintelligence: How Computers Misunderstand the World. Her research focuses on artificial intelligence in investigative reporting, with a particular interest in using data analysis for social good. Her newest project explores how future historians will read today’s news on tomorrow’s computers. A former features editor at the Philadelphia Inquirer, she has also worked as a software developer at AT&T Bell Labs and the MIT Media Lab. Her features and essays have appeared in The Atlantic, Harper’s, Slate, and other outlets.</p>
+            </div>
+          </div>
+        </div>
+    </div></section>
+
+    <section class="full-page-height" id="submissions">
+      <div class="layer">
+        <div class="wrapper">
+          <h1>Submissions</h1>
+          <p>The 3rd European Data and Computational Journalism Conference aims to bring together industry, practitioners and academics in the fields of journalism and news production and information, data, social and computer sciences, facilitating a multidisciplinary discussion on these topics in order to advance research and practice in the broad area of Data and Computational Journalism.</p>
+          <p>Held in Malaga, Spain, the conference will present a mix of academic talks and keynotes from industry leaders. It will be followed by a day of workshops and tutorials.</p>
+          <p>We invite the submission of both academic research-focused and industry-focused talks for the conference, on the subjects of journalism, data journalism, and information, data, social and computer sciences.</p>
+          <p>Academic talks should be submitted as 2-page extended abstracts, using <a href="http://datajconf.com/submissions/EDCJC_Extended_Abstract_Template.docx">this template</a>. Industry talks are also encouraged, which can be submitted to the main submission site as brief descriptions highlighting the topics and key themes of the talk and the relevance to the conference, <a href="http://datajconf.com/submissions/EDCJC_Industry_Talk_Form.docx">using this form</a>. Proposals for workshops and tutorials are also welcome, <a href="#workshops">see below</a>.</p>
+          <p>
+            Topics of interest include, but are not limited to:
+            <ul>
+              <li>Application of data and computational journalism within newsrooms</li>
+              <li>Data driven investigations</li>
+              <li>Data storytelling</li>
+              <li>Open data for journalism, storytelling, transparency and accountability</li>
+              <li>Algorithms, transparency and accountability</li>
+              <li>Automated, robot and chatbot journalism</li>
+              <li>Newsroom software and tools</li>
+              <li>‘Post-fact’ journalism and the impact of data </li>
+              <li>User experience and interactivity</li>
+              <li>Data and Computational Journalism education</li>
+              <li>Post-desktop news provision/interaction</li>
+              <li>Data mining news sources</li>
+              <li>Visualisation and presentation</li>
+              <li>News games and gamification of News</li>
+              <li>Bias, ethics, transparency and truth in Data Journalism</li>
+              <li>Newsroom challenges with respect to data journalism, best practices, success and failure stories</li>
+            </ul>
+          </p>
+          <p>Extended Abstracts presented at the conference will be archived in proceedings compiled by the Library of University College Dublin. Selected full papers from the conference will be invited to submit to a journal special issue (tbc).</p>
+          <p>For any questions about submissions or the conference, please <a href="mailto:hello@datajconf.com">email us</a>, contact one of the <a href="#organisers">organisers</a> directly, or get in touch via <a href="http://www.twitter.com/intent/user?screen_name=datajconf">twitter</a>.</p>
+          <h3>Submissions should be received by 23:59 UTC on 4th April 2019</h3>
+          <p><a class="button" href="https://easychair.org/conferences/?conf=datajconf2019">Submit Paper/Talk Proposal</a></p>
+          <h1 id="workshops">Workshop Proposals</h1>
+          <p>Submissions are also welcomed for ½ day workshops/tutorials to be given on the 2nd day of the conference. These could be practical/introductory sessions on topics/tools related to the themes of the conference. Workshop/Tutorial proposals should include information on the workshop/tutorial topic, the maximum number of attendees, and any space/equipment requirements, and can be submitted through the main submission site <a href="http://datajconf.com/submissions/EDCJC_Workshop_Proposal.docx">using this form</a>.</p>
+          <p>For any questions about submissions or the conference, please <a href="mailto:hello@datajconf.com">email us</a>, contact one of the <a href="#organisers">organisers</a> directly, or get in touch via <a href="http://www.twitter.com/intent/user?screen_name=datajconf">twitter</a>.</p>
+          <h3>Submissions should be received by 23:59 UTC on 4th April 2019</h3>
+          <p><a class="button" href="https://easychair.org/conferences/?conf=datajconf2019">Submit Workshop Proposal</a></p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <section class="half-page-height" id="schedule">
+      <div class="layer">
+        <div class="wrapper">
+          <h1>Conference Schedule</h1>
+          <p>Below is the conference schedule</p>
+          <p>
+            <h3>Day 1 - Wednesday 20th June 2018</h3>
+            <h4>Glamorgan Building, Cardiff University</h4>
+            <table class="dayone">
+              <thead>
+                <th>Time</th>
+                <th>Talk</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>9:30</td>
+                  <td><span class="title">Arrival and Registration</span></td>
+                </tr>
+                <tr>
+                  <td>10:00</td>
+                  <td><span class="title">Opening</span></td>
+                </tr>
+                <tr>
+                  <td>10:15</td>
+                  <td><span class="title">Invited Talk</span><br>Alberto Cairo, University of Miami</td>
+                </tr>
+                <tr>
+                  <td>11:00</td>
+                  <td><span class="title">The stories behind a line: visualising personal narratives</span><br>Federica Fragapane</a></td>
+                </tr>
+                <tr class="break">
+                  <td>11:20</td>
+                  <td><span class="title">Break</span></td>
+                </tr>
+                <tr>
+                  <td>11:40</td>
+                  <td><span class="title">Data-driven journalism and transparency in Brazil: collaboration for open data</span><br>Marília Gehrke</td>
+                </tr>
+                <tr>
+                  <td>12:00</td>
+                  <td><span class="title">Fragmentation across media platforms: Mapping Audience behaviour on the web, Facebook and Twitter</span><br>Silvia Majo-Vazquez, Jason R. C. Nurse, Jun Zhao and Rasmus K Nielsen</td>
+                </tr>
+                <tr>
+                  <td>12:20</td>
+                  <td><span class="title">10 top tips for making government data more accessible</span><br>Zoe Hartland</td>
+                </tr>
+                <tr>
+                  <td>12:40</td>
+                  <td><span class="title">datastorytelling.gov.uk</span><br>Lisa Jones</td>
+                </tr>
+                <tr class="break">
+                  <td>13:00</td>
+                  <td><span class="title">Lunch</span></td>
+                </tr>
+                <tr>
+                  <td>14:00</td>
+                  <td><span class="title">How the BBC is enhancing local news output through its new Shared Data Unit</span><br>Peter Sherlock</td>
+                </tr>
+                <tr>
+                  <td>14:20</td>
+                  <td><span class="title">Data Journalism Education Globally</span><br>Bahareh R. Heravi</td>
+                </tr>
+                <tr>
+                  <td>14:40</td>
+                  <td><span class="title">You guessed it! Reflecting on preconceptions and exploring data without statistics</span><br>Pablo Leon Villagra, Sarwar Islam, Megan Lucero, Brooks Paige and Tomas Petricek</td>
+                </tr>
+                <tr class="break">
+                  <td>15:00</td>
+                  <td><span class="title">Break</span></td>
+                </tr>
+                <tr>
+                  <td>15:20</td>
+                  <td><span class="title">Stories of storytelling about UK’s EU funding</span><br>Mariana Marasoiu, Sarwar Islam, Luke Church, Megan Lucero, Brooks Paige and Tomas Petricek</td>
+                </tr>
+                <tr>
+                  <td>15:40</td>
+                  <td><span class="title">Fighting corruption using open data with Global Witness and DataKind</span><br>Giselle Cory</td>
+                </tr>
+                <tr>
+                  <td>16:00</td>
+                  <td><span class="title">Invited Talk</span><br>Mar Cabra</td>
+                </tr>
+                <tr>
+                  <td>16:45 - 17:00</td>
+                  <td><span class="title">Closing</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Conference Social</h3>
+            The conference will be followed by a social gathering (details tbc) - please come along and join us for drinks and discussion!
+          </p>
+          <h3>Day 2 - Thursday June 21st 2018</h3>
+          <h4>Glamorgan Building, Cardiff University</h4>
+          <p>
+            Our second day will consist of a number of hands on talks and workshops. Registered attendees will shortly receive an invite to register for their chosen workshops
+            <table class="daytwo">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Track 1: Workflow</th>
+                  <th>Track 2: Coding</th>
+                  <th>Track 3: Tools</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>9:30 - 10:45</td>
+                  <td><span class="title">From interactive to social media: how to promote data journalism</span><br>Martin Gonzalez Gomez and Marie Segger, The Economist</td>
+                  <td><span class="title">From Excel to R - part 1</span><br>Steph Locke, Locke Data</td>
+                  <td><span class="title">How to create charts that won't upset data vis experts? The Do's and the Don'ts</span><br>Lisa Charlotte Rost, Datawrapper</td>
+                </tr>
+                <tr class="break">
+                  <td>10:45 - 11:15</td>
+                  <td colspan="3"><span class="title">Break</span></td>
+                </tr>
+                <tr>
+                  <td>11:15 - 12:30</td>
+                  <td></td>
+                  <td><span class="title">From Excel to R - part 2</span><br>Steph Locke, Locke Data</td>
+                  <td><span class="title">Google News Initiative: Tools for Data Journalism</span> Vincent Ryan, Teaching Fellow, Google News Lab</td>
+                </tr>
+                <tr class="break">
+                  <td>12:30 - 13:30</td>
+                  <td colspan="3"><span class="title">Lunch</span></td>
+                </tr>
+                <tr>
+                  <td>13:30 - 14:45</td>
+                  <td><span class="title">Statistical Thinking for Journalists: from biases to objectivity - part 1</span><br>Ana Kolar, TaraStats Statistical Consultancy</td>
+                  <td><span class="title">Introduction to Visualisation with JavaScript & D3 - part 1</span><br>Martin Chorley, Cardiff University</td>
+                  <td><span class="title">Getting started with Data Journalism - part 1</span><br>Bahareh Heravi, University College Dublin and Glyn Mottershead, Cardiff University</td>
+                </tr>
+                <tr class="break">
+                  <td>14:45 - 15:15</td>
+                  <td colspan="3"><span class="title">Break</span></td>
+                </tr>
+                <tr>
+                  <td>15:15 - 16:30</td>
+                  <td><span class="title">Statistical Thinking for Journalists: from biases to objectivity - part 2</span><br>Ana Kolar, TaraStats Statistical Consultancy</td>
+                  <td><span class="title">Introduction to Visualisation with JavaScript & D3 - part 2</span><br>Martin Chorley, Cardiff University</td>
+                  <td><span class="title">Getting started with Data Journalism - part 2</span><br>Bahareh Heravi, University College Dublin and Glyn Mottershead, Cardiff University</td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
+        </div>
+      </div>
+    </section> -->
+
+
+
+    <section class="half-page-height" id="venue">
+      <div class="layer">
+        <div class="wrapper">
+          <h1 class="section-title">Venue</h1>
+          <p>The conference will be held in Malaga, Spain, on the 1st and 2nd of July, 2019.</p>
+        </div>
+      </div>
+    </section>
+    <section class="full-page-height" id="organisers">
+      <div class="wrapper">
+        <h1 class="section-title">Organisers</h1>
+        <div class="flex-wrapper">
+          <div class="organiser">
+            <img src="img/bahareh.jpeg" alt="">
+            <h2>Bahareh Heravi</h2>
+            <h3><a href="https://www.twitter.com/intent/user?screen_name=Bahareh360">@Bahareh360</a></h3>
+            <p>Bahareh is an Assistant Professor in the School of Information and Communication Studies at University College Dublin, where she is the the Postgraduate Director of the School, and the Director of the Data Journalism programme. Prior to joining UCD, Bahareh was the Head of Insight News Lab at the Insight Centre for Data Analytics at the National University of Ireland, Galway. During this time she led a number of R&D projects with the Irish National TV and Radio broadcaster, RTÉ. Bahareh is the former Lead Data Scientist at The Irish Times and the founder of Hacks/Hackers Dublin.</p>
+          </div>
+          <div class="organiser">
+            <img src="img/bella.jpg" alt="">
+            <h2>Bella Palomo</h2>
+            <h3><a href="https://www.twitter.com/intent/user?screen_name=bellapalomo">@bellapalomo</a></h3>
+            <p>Professor and Head of the Department of Journalism at University of Málaga (Spain). She is specialised in the fields of digital journalism, editorial design, active audiences, social media and journalistic routines. Palomo teaches multimedia reporting, and she is author of a hundred of articles and books about these topics. She has been multimedia and communication consultant in Universitat Oberta de Catalunya, and visiting professor in the Universities of Washington, Rutgers, Miami (USA), Shanghai (China) and Federal de Bahía (Brazil).</p>
+          </div>
+        </div>
+        <div class="flex-wrapper">
+          <div class="organiser">
+            <img src="img/glyn.jpg" alt="">
+            <h2>Glyn Mottershead</h2>
+            <h3><a href="https://www.twitter.com/intent/user?screen_name=glynmottershead">@glynmottershead</a></h3>
+            <p>A former newspaper reporter, feature writer, subeditor and production journalist, Glyn has worked across a range of news beats including crime, health and local government. Glyn is a co-author of The 21st Century Journalism Handbook and specialises in Digital Journalism and Data Journalism. He is a member of Investigative Reporters and Editors, and the Online News Association. Glyn is the co-director of the MSc Computational and Data Journalism at Cardiff University. He teaches at undergraduate and postgraduate levels, specialising in digital and data journalism. He is one of the founders of Hacks/Hackers South Wales X South West.</p>
+          </div>
+          <div class="organiser">
+            <img src="img/martin.jpg" alt="">
+            <h2>Martin Chorley</h2>
+            <h3><a href="https://www.twitter.com/intent/user?screen_name=martinjc">@martinjc</a></h3>
+            <p>Martin is a Senior Lecturer (Associate Professor) in the School of Computer Science &amp; Informatics at Cardiff University, where he is course director for the MSc Computational and Data Journalism, and Director of Learning and Teaching. His research is primarily focused in the areas of computational journalism and mobile and social computing, where he examines the ways in which humans and society interact with systems and technology. He teaches web development, data analysis and visualisation. He is one of the organisers of the PyDiff meetup in Cardiff, and is also one of the founders of Hacks/Hackers South Wales X South West.</p>
+          </div>
+        </div>
+        <div class="pc">
+          <h2>Program Committee</h2>
+          <p>
+            <ul>
+              <li>James Hamilton (Stanford University, U.S.)</li>
+              <li>Nicholas Diakopoulos (Northwestern University, U.S.)</li>
+              <li>Meredith Broussard (New York University, U.S.)</li>
+              <li>Cheryl Phillips (Stanford University, U.S.)</li>
+              <li>Eddy Borges Rey (University of Stirling, Scotland, U.K.)</li>
+              <li>Paul Bradshaw (Birmingham City University, U.K.)</li>
+              <li>Marc Esteve del Valle (University of Groningen, The Netherlands)</li>
+              <li>Jonathan Gray (Kings College London, U.K.)</li>
+              <li>Florian Stalph (University of Passau, Germany)</li>
+              <li>Silvia Majo-Vazquez (University of Oxford, U.K.)</li>
+              <li>Liliana Bounegru (University of Groningen, The Netherlands)</li>
+              <li>Carl-Gustav Linden (University of Helsinki, Finland)</li>
+              <li>Wiebke Loosen (Hans-Bredow-Institut, Germany)</li>
+              <li>Ester Applegren (Södertörn University, Sweden)</li>
+              <li>Ramón Salaverría (Universidad de Navarra, Spain)</li>
+              <li>Pere Masip (Universitat Ramón Llull, Spain)</li>
+              <li>Bahareh Heravi (University College Dublin, Ireland)</li>
+              <li>Glyn Mottershead (Cardiff University, Wales, U.K.)</li>
+              <li>Martin Chorley (Cardiff University, Wales, U.K.)</li>
+              <li>Bella Palomo (Universidad de Málaga, Spain)</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="half-page-height" id="sponsors">
+      <div class="wrapper">
+        <h1 class="section-title">Sponsors</h1>
+        <div class="sponsor-group">
+          <p>Sponsorship opportunities are available, please get in touch! Please <a href="mailto:hello@datajconf.com">email us</a>, contact one of the <a href="#organisers">organisers</a> directly, or get in touch via <a href="http://www.twitter.com/intent/user?screen_name=datajconf">twitter</a>.</p>
+        </div>
+        <h3>Powered By</h3>
+
+        <div class="sponsor-group">
+          <p>
+            <img class="gni" src="img/googlenewsinitiative.png" alt="">
+          </p>
+        </div>
+        <h2>Supported by</h2>
+        <div class="sponsor-group">
+          <p>
+            <img class="uni" src="img/logoUMA1.jpg" alt="">
+            <img class="uni" src="img/Logo-RedExcelencia.jpg" alt="">
+          </p>
+        </div>
+        <div class="sponsor-group">
+          <img class="iamcr" src="img/IAMCR-logo.png" alt="">
+        </div>
+        <div class="sponsor-group">
+          <p>
+            <img class="uni" src="img/CUCOMSC.jpg" alt="">
+            <img class="uni" src="img/CUJOMEC.jpg" alt="">
+          </p>
+        </div>
+        <div class="sponsor-group">
+          <p>
+            <img class="uni" src="img/UCD_ICS.jpg" alt="">
+            <img class="uni" src="img/UCD_CSS.jpg" alt="">
+          </p>
+        </div>
+        <div class="sponsor-group">
+          <p>
+            <img class="hh" src="img/hhdub.png" alt="">
+            <img class="hh" src="img/hhswxsw.png" alt="">
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="past">
+    <div class="layer">
+      <div class="wrapper">
+        <p>Previously:</p>
+        <ul>
+          <li><a href="http://datajconf.com/2017/">2017</a> (<a href="http://hdl.handle.net/10197/8634">Proceedings</a>)</li>
+          <li><a href="http://datajconf.com/2018/">2018</a> (<a href="http://hdl.handle.net/10197/9416">Proceedings</a>)</li>
+        </ul>
+        <p>Image Credits:</p>
+        <ul>
+          <li><a href="https://pixabay.com/en/microphone-audio-voice-auditorium-1206364/">Microphone</a> - <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> by <a href="https://pixabay.com/en/users/HugoAtaide-2073435/">HugoAtaide</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <script src="js/app.js"></script>
 
   <!-- analytics -->
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-92286291-1', 'auto');
     ga('send', 'pageview');
@@ -432,9 +491,9 @@
 
   <!-- twitter integration -->
   <script>
-    window.twttr = (function(d, s, id) {
+    window.twttr = (function (d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0],
-      t = window.twttr || {};
+        t = window.twttr || {};
       if (d.getElementById(id)) return t;
       js = d.createElement(s);
       js.id = id;
@@ -442,12 +501,13 @@
       fjs.parentNode.insertBefore(js, fjs);
 
       t._e = [];
-      t.ready = function(f) {
-      t._e.push(f);
+      t.ready = function (f) {
+        t._e.push(f);
       };
 
       return t;
-      }(document, "script", "twitter-wjs"));
+    }(document, "script", "twitter-wjs"));
   </script>
 </body>
+
 </html>
