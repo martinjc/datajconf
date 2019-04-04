@@ -4,7 +4,10 @@
     line-height: 1.4 * $base-line-height;
     text-align: right;
 
-    .title, .subtitle, .button, .countdown {
+    .title,
+    .subtitle,
+    .button,
+    .countdown {
         animation-duration: 2s;
         animation-delay: 1s;
     }
@@ -22,7 +25,6 @@
 }
 
 #past-splash {
-
     background: url(../img/microphone_small.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -45,13 +47,13 @@
             color: lighten($brand-colour, 10%);
         }
 
-        &:visited{
+        &:visited {
             color: $brand-colour;
         }
     }
 }
 
-#clockdiv{
+#clockdiv {
     padding-top: $spacing-unit;
     padding-bottom: $spacing-unit;
     color: #fff;
@@ -75,7 +77,7 @@
         }
     }
 
-    .smalltext{
+    .smalltext {
         padding-top: 5px;
         font-size: 16px;
     }
@@ -91,16 +93,18 @@
     font-weight: 300;
 
     .sponsor {
-        // text-shadow: 2px 2px 4px black;
+        text-shadow: 2px 2px 4px grey;
         padding: 2px;
         display: inline-block;
     }
 
-
+    img {
+        margin-top: $spacing-unit/4;
+        max-width: 200px;
+    }
 }
 
 .navbar {
-
     position: fixed;
     top: 0;
     left: 0;
@@ -112,7 +116,6 @@
     background-color: rgba(black, 0.5);
 
     a {
-
         color: $link-colour;
         margin-right: $spacing-unit/4;
         margin-left: $spacing-unit/4;
@@ -134,7 +137,6 @@
 }
 
 #conference {
-
     h1 {
         text-align: center;
     }
@@ -142,12 +144,12 @@
     p {
         width: 100%;
         margin: auto;
-        margin-bottom: $spacing-unit;
+        margin-bottom: $spacing-unit/4;
         text-align: center;
     }
 
     .explainer {
-        margin-top: 10vh;
+        //margin-top: 2vh;
     }
 }
 
@@ -190,7 +192,8 @@
             border-radius: 100px;
         }
 
-        h1, h2 {
+        h1,
+        h2 {
             text-shadow: 2px 2px 2px black;
             color: lighten($contrast-colour, 20%);
         }
@@ -206,7 +209,7 @@
                     color: lighten($brand-colour, 10%);
                 }
 
-                &:visited{
+                &:visited {
                     color: $brand-colour;
                 }
             }
@@ -255,14 +258,15 @@
     }
 
     .dayone thead th:nth-child(2) {
-        text-align:left;
+        text-align: left;
     }
 
     .daytwo thead th:nth-child(1) {
         width: 15%;
     }
 
-    th, td {
+    th,
+    td {
         padding: 10px;
     }
 
@@ -281,7 +285,7 @@
     }
 
     tbody tr:nth-child(odd) {
-      background-color: lighten($brand-colour, 10%);
+        background-color: lighten($brand-colour, 10%);
     }
 
     tbody .break {
@@ -293,21 +297,20 @@
         font-weight: 700;
     }
 
-    td  a{
+    td a {
         color: $contrast-colour;
 
         &:hover {
             color: darken($contrast-colour, 20%);
         }
 
-        &:visited{
+        &:visited {
             color: $contrast-colour;
         }
     }
 }
 
 #organisers {
-
     .flex-wrapper {
         margin: 0 auto;
         display: flex;
@@ -315,7 +318,6 @@
     }
 
     .organiser {
-
         img {
             width: 50%;
             border-radius: 100px;
@@ -332,7 +334,7 @@
                     color: lighten($brand-colour, 10%);
                 }
 
-                &:visited{
+                &:visited {
                     color: $brand-colour;
                 }
             }
@@ -352,7 +354,6 @@
             padding-left: 20px;
             padding-right: 20px;
         }
-
     }
 
     ul {
@@ -370,8 +371,6 @@
             font-size: 1.4 * $small-font-size;
             line-height: 1.2 * $base-line-height;
         }
-
-
     }
 }
 
@@ -396,11 +395,10 @@
             color: lighten($brand-colour, 10%);
         }
 
-        &:visited{
+        &:visited {
             color: $brand-colour;
         }
     }
-
 }
 
 #submissions {
@@ -408,7 +406,10 @@
     //background-size: cover;
     //background-attachment: fixed;
     color: white;
-    h1, h2, h3, h4 {
+    h1,
+    h2,
+    h3,
+    h4 {
         color: lighten($brand-colour, 5%);
     }
 
@@ -426,7 +427,7 @@
         margin-bottom: $spacing-unit;
     }
 
-    p>a {
+    p > a {
         color: lighten($contrast-colour, 5%);
 
         &:visited {
@@ -450,21 +451,18 @@
             color: darken($brand-colour, 10%);
         }
     }
-
 }
 
 #sponsors {
-
     .sponsor-group {
         max-width: 80%;
         margin: auto;
     }
 
     img {
-
         max-width: 100%;
 
-        &.logo{
+        &.logo {
             margin-right: 20px;
             max-height: 100px;
 
@@ -484,7 +482,7 @@
 }
 
 footer {
-    color:white;
+    color: white;
 
     .layer {
         background-color: rgba($grey-colour-dark, 0.9);
@@ -514,23 +512,20 @@ footer {
 }
 
 @include media-query($small-break) {
-
     .hero {
         padding-top: $spacing-unit * 3;
     }
 
-    #clockdiv{
+    #clockdiv {
         padding-top: $spacing-unit * 2;
     }
 
     .navbar {
         font-size: $medium-font-size;
     }
-
 }
 
 @include media-query($medium-break) {
-
     nav {
         text-align: right;
     }
@@ -545,7 +540,6 @@ footer {
     }
 
     .hero {
-
         padding-top: 30vh;
         padding-right: $spacing-unit;
         line-height: $base-line-height;
@@ -561,14 +555,13 @@ footer {
     }
 
     .wrapper {
-
         h1 {
             font-size: 1.5 * $large-font-size;
             padding-top: $spacing-unit;
         }
     }
 
-    #clockdiv{
+    #clockdiv {
         padding-top: $spacing-unit * 3;
     }
 
@@ -586,7 +579,8 @@ footer {
         }
     }
 
-    #venue, #schedule {
+    #venue,
+    #schedule {
         ul {
             list-style: none;
         }
@@ -597,12 +591,10 @@ footer {
             width: 55%;
             margin: auto;
             padding-bottom: $spacing-unit;
-
         }
     }
 
     #conference {
-
         h1 {
             text-align: center;
         }
@@ -621,7 +613,8 @@ footer {
         }
     }
 
-    #speakers, #organisers {
+    #speakers,
+    #organisers {
         .flex-wrapper {
             padding-top: 10vh;
             flex-direction: row;
@@ -635,6 +628,4 @@ footer {
             line-height: $base-line-height * 1.5;
         }
     }
-
-
 }
