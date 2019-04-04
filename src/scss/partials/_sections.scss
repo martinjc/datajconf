@@ -100,7 +100,7 @@
 
     img {
         margin-top: $spacing-unit/4;
-        max-width: 200px;
+        max-width: 400px;
     }
 }
 
@@ -461,6 +461,10 @@
 
     img {
         max-width: 100%;
+
+        &.gni {
+            
+        }
 
         &.logo {
             margin-right: 20px;
