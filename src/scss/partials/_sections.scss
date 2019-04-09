@@ -91,6 +91,7 @@
     color: #fff;
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
+    max-width: 100vw;
     font-weight: 300;
 
     .sponsor {
@@ -102,7 +103,7 @@
     img {
         margin-top: $spacing-unit/4;
         width: 800px;
-        max-width: 800px;
+        max-width: 80vw;
     }
 }
 
@@ -469,7 +470,7 @@
         }
 
         &.gni {
-            max-width: 400px;
+            max-width: 80vw;
             width: 400px;
         }
 
