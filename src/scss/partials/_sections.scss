@@ -84,11 +84,12 @@
 }
 
 #google {
-    // position: absolute;
-    // bottom: 1px;
+    position: absolute;
+    bottom: 1px;
     margin-top: $spacing-unit * 2;
     padding-left: $spacing-unit/2;
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     font-weight: 300;
 
@@ -100,7 +101,8 @@
 
     img {
         margin-top: $spacing-unit/4;
-        max-width: 400px;
+        width: 800px;
+        max-width: 800px;
     }
 }
 
@@ -462,8 +464,13 @@
     img {
         max-width: 100%;
 
+        &.iamcr {
+            max-width: 200px;
+        }
+
         &.gni {
-            
+            max-width: 400px;
+            width: 400px;
         }
 
         &.logo {
