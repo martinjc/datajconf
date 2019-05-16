@@ -1,5 +1,5 @@
 .hero {
-    padding-top: $spacing-unit * 2.5;
+    padding-top: $spacing-unit;
     padding-right: $spacing-unit/2;
     line-height: 1.4 * $base-line-height;
     text-align: right;
@@ -10,6 +10,10 @@
     .countdown {
         animation-duration: 2s;
         animation-delay: 1s;
+    }
+
+    .button {
+        z-index: 300;
     }
 
     h1 {
@@ -54,7 +58,7 @@
 }
 
 #clockdiv {
-    padding-top: $spacing-unit;
+    padding-top: $spacing-unit/3;
     padding-bottom: $spacing-unit;
     color: #fff;
     margin: auto;
@@ -64,6 +68,8 @@
 
     .countdown {
         padding: 10px;
+        padding-top: 6px;
+        padding-bottom: 6px;
         margin-left: 1px;
         margin-right: 1px;
         background: darken($contrast-colour, 15%);
@@ -72,6 +78,8 @@
 
         span {
             padding: 15px;
+            padding-top: 6px;
+            padding-bottom: 6px;
             background: $contrast-colour;
             display: inline-block;
         }
@@ -95,7 +103,6 @@
     font-weight: 300;
 
     .sponsor {
-        text-shadow: 2px 2px 4px grey;
         padding: 2px;
         display: inline-block;
     }
@@ -103,7 +110,7 @@
     img {
         margin-top: $spacing-unit/4;
         width: 800px;
-        max-width: 80vw;
+        max-width: 50vw;
     }
 }
 
@@ -552,7 +559,7 @@ footer {
     }
 
     .hero {
-        padding-top: 30vh;
+        padding-top: 15vh;
         padding-right: $spacing-unit;
         line-height: $base-line-height;
 
@@ -574,7 +581,7 @@ footer {
     }
 
     #clockdiv {
-        padding-top: $spacing-unit * 3;
+        padding-top: $spacing-unit * 2;
     }
 
     #sponsors {
