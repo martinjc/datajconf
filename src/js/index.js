@@ -1,6 +1,6 @@
 import * as moment from 'moment';
 
-const CONFERENCE_DATE = new moment('2019-07-01 09:00');
+const CONFERENCE_DATE = new moment('2020-07-20 09:00');
 
 function updateTimer() {
     var now = moment();
