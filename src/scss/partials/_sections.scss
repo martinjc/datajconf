@@ -12,6 +12,21 @@
         animation-delay: 1s;
     }
 
+    .cancellation {
+        padding: 10px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-right: 6px;
+        margin-left: 2rem;
+        background: darken($contrast-colour, 15%);
+        border: 1px solid $brand-colour;
+        text-align: center;
+
+        h2 {
+            padding-bottom: 0;
+        }
+    }
+
     .button {
         z-index: 300;
     }
