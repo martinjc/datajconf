@@ -56,7 +56,7 @@
         "eslint": "^4.9.0",
         "gh-pages": "^1.0.0",
         "imagemin-cli": "^4.0.0",
-        "node-sass": "^4.12.0",
+        "node-sass": "^4.13.1",
         "onchange": "^3.2.1",
         "parallelshell": "3.0.1",
         "postcss-cli": "^4.1.1",
